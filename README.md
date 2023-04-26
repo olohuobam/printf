@@ -40,7 +40,7 @@ Integer: printf("%i", 8); Output: 8
 Header File Where All Prototypes Are Saved.
 ### get_print_func.c
 Pointer To A Function That Selects The Correct Function To Perform The Operation.
-### print_buf.c
+### char_put.c
 Function That Prints The Buffer.
 ### handl_buf.c
 Function That Concatenates The Buffer Characters.

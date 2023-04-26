@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			if (format[i + 1] == '\0')
-			{	print_buf(buffer, ibuf), free(buffer), va_end(arguments);
+			{	char_put(buffer, ibuf), free(buffer), va_end(arguments);
 				return (-1);
 			}
 			else
@@ -45,6 +45,6 @@ int _printf(const char *format, ...)
 		for (ibuf = len; ibuf > 1024; ibuf -= 1024)
 			;
 	}
-	print_buf(buffer, ibuf), free(buffer), va_end(arguments);
+	char_put(buffer, ibuf), free(buffer), va_end(arguments);
 	return (len);
 }
