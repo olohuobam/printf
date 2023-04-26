@@ -2,7 +2,7 @@
 
 /**
  * _printf - formatted output conversion, print data.
- * @format: input string.
+ * @format: input string
  * Return: number of characters printed.
  */
 int _printf(const char *format, ...)
